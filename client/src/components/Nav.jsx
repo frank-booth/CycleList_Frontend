@@ -1,15 +1,17 @@
 import NavLogo from '../assets/NavLogo.svg'
+import {NavLink , Link} from 'react-router-dom'
 
 const Nav = () => {
 
     return (
         <div>
             <div id='logo'><img src={NavLogo} alt="cycle-list-logo" /></div>
-            <ul>
-                <li>home</li>
-                <li>login/sign up</li>
-                <li>songs</li>
-            </ul>
+            <div className='nav-links'>
+                <NavLink to='/'>Home</NavLink>
+                <NavLink to="/riders/:riderId">My Rides</NavLink>
+                <NavLink to="/songs">Songs</NavLink>
+                <NavLink to="/about">About</NavLink>
+            </div>
         </div>
     )
 }
