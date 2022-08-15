@@ -9,6 +9,9 @@ import SongRoutine from './pages/SongRoutine'
 import About from './pages/About'
 import SignUp from './components/SignUp'
 import Login from './components/Login'
+import AddSong from './components/AddSong'
+import SongGenre from './components/SongGenre'
+import RoutineType from './components/RoutineType'
 
 function App() {
   return (
@@ -27,6 +30,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/riders/:riderId/addsong" element={<AddSong />} />
+          <Route path="/songs/genres" element={<SongGenre />} />
+          <Route path="/songs/routine-types" element={<RoutineType />} />
         </Routes>
       </main>
     </div>
