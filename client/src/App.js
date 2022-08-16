@@ -10,6 +10,7 @@ import About from "./pages/About";
 import SignUp from "./components/SignUp";
 import Login from "./components/Login";
 import AddSong from "./components/AddSong";
+import AddRoutine from "./components/AddRoutine"
 import SongGenre from "./components/SongGenre";
 import RoutineType from "./components/RoutineType";
 
@@ -31,6 +32,7 @@ function App() {
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
           <Route path="/riders/:riderId/addsong" element={<AddSong />} />
+          <Route path="/songs/:songId/addroutine" element={<AddRoutine />} />
           <Route path="/songs/genres" element={<SongGenre />} />
           <Route path="/songs/routine-types" element={<RoutineType />} />
         </Routes>
