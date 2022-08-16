@@ -6,12 +6,18 @@ const Nav = () => {
     <div className='navBar'>
       <div className='navContent'>
         <div id="logo">
-          <img src={NavLogo} alt="cycle-list-logo" />
+
+          <Link to="/">
+          <img src={NavLogo} alt="cycle-list-logo" className="nav-logo" />
+          </Link>
         </div>
         <div className="nav-links">
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/songs">Songs</NavLink>
-          <NavLink to="/about">About</NavLink>
+          <div className="links">
+            <NavLink id="links" to="/">Home</NavLink>
+            <NavLink  id="links" to="/songs">Songs</NavLink>
+            <NavLink id="links"to="/about">About</NavLink>
+          </div>
+
         </div>
       </div>
     </div>
