@@ -36,36 +36,42 @@ const SignUp = () => {
             type="text"
             onChange={handleChange}
             value={formState.firstName}
+            placeholder="First Name"
           />
           <input
             id="lastName"
             type="text"
             onChange={handleChange}
             value={formState.lastName}
+            placeholder="Last Name"
           />
           <input
             id="email"
             type="text"
             onChange={handleChange}
             value={formState.email}
+            placeholder="Email"
           />
           <input
             id="userName"
             type="text"
             onChange={handleChange}
             value={formState.userName}
+            placeholder="Username"
           />
           <input
             id="passwordDigest"
             type="text"
             onChange={handleChange}
             value={formState.passwordDigest}
+            placeholder="Password"
           />
           <input
             id="riderImage"
             type="text"
             onChange={handleChange}
             value={formState.riderImage}
+            placeholder="Profile Picture"
           />
           <button type="submit">Submit</button>
         </form>
