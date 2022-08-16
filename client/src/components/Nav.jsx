@@ -6,6 +6,7 @@ const Nav = () => {
     <div className='navBar'>
       <div className='navContent'>
         <div id="logo">
+
           <Link to="/">
           <img src={NavLogo} alt="cycle-list-logo" className="nav-logo" />
           </Link>
@@ -16,6 +17,7 @@ const Nav = () => {
             <NavLink  id="links" to="/songs">Songs</NavLink>
             <NavLink id="links"to="/about">About</NavLink>
           </div>
+
         </div>
       </div>
     </div>
