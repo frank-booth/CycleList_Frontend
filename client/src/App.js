@@ -1,24 +1,24 @@
-import './App.css'
-import axios from 'axios'
-import { Route, Routes } from 'react-router-dom'
-import Nav from './components/Nav'
-import Home from './pages/Home'
-import Rider from './components/Rider'
-import Songs from './pages/Songs'
-import SongRoutine from './pages/SongRoutine'
-import About from './pages/About'
-import SignUp from './components/SignUp'
-import Login from './components/Login'
-import AddSong from './components/AddSong'
-import SongGenre from './components/SongGenre'
-import RoutineType from './components/RoutineType'
+import "./App.css";
+import axios from "axios";
+import { Route, Routes } from "react-router-dom";
+import Nav from "./components/Nav";
+import Home from "./pages/Home";
+import Rider from "./components/Rider";
+import Songs from "./pages/Songs";
+import SongRoutine from "./pages/SongRoutine";
+import About from "./pages/About";
+import SignUp from "./components/SignUp";
+import Login from "./components/Login";
+import AddSong from "./components/AddSong";
+import SongGenre from "./components/SongGenre";
+import RoutineType from "./components/RoutineType";
 
 function App() {
   return (
     <div className="App">
       <header>
-        <h1>CycleList</h1>
         <Nav />
+        <h1>CycleList</h1>
       </header>
 
       <main>
@@ -36,7 +36,7 @@ function App() {
         </Routes>
       </main>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
