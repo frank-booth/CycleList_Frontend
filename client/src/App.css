@@ -1,3 +1,27 @@
 *{
   text-align: center;
-  }
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 106px;
+  position: relative;
+  width: 100%vw;
+  height: 64px;
+  background: #FF2615;
+}
+
+.navContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 32px;
+  gap: 738px;
+  width: 1280px;
+  height: 64px;
+}
