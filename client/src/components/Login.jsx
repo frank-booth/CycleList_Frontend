@@ -20,12 +20,10 @@ const Login = ({ riders }) => {
     )
 
     if (userData) {
-      if (userData.userName === formState.userName) {
-        navigate(`/riders/${userData.id}`, { state: { rider: userData } })
-        console.log(userData.firstName)
-      } else {
-        alert('try again')
-      }
+      navigate(`/riders/${userData.id}`, { state: { rider: userData } })
+      console.log(userData.firstName)
+    } else {
+      alert('try again')
     }
   }
 
