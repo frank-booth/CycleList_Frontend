@@ -15,13 +15,14 @@ const Login = ({ riders }) => {
   }
 
   const handleSubmit = (event) => {
-    for (let i = 0; i < riders.length; i++) {
-      if ((event.target.value = riders[i].userName)) {
-        navigate(`/riders/${riders[i].id}`, { state: { riders: riders } })
-        setFormState(initialState)
-        return
+    const userData = riders.find((rider) => rider.userName === formState.userName)
+
+    if (userData) {
+      if (userData.userName === formState.userName) {
+        navigate(`/riders/${userData.id}`, {state: { rider: userData }})
+        console.log(userData.firstName)
       } else {
-        alert('Try again')
+        alert('try again')
       }
     }
   }
