@@ -1,5 +1,5 @@
-import { NavLink } from "react-router-dom"
-import RiderSongList from "./RiderSongList"
+import { NavLink } from 'react-router-dom'
+import RiderSongList from './RiderSongList'
 
 const Rider = () => {
   return (

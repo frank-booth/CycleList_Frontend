@@ -57,7 +57,7 @@ function App() {
           <Route path="/songs/:songId" element={<SongRoutine />} />
           <Route path="/about" element={<About />} />
           <Route path="/signup" element={<SignUp />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<Login riders={riders} />} />
           <Route path="/riders/:riderId/addsong" element={<AddSong />} />
           <Route path="/songs/:songId/addroutine" element={<AddRoutine />} />
           <Route path="/songs/genres" element={<SongGenre />} />
