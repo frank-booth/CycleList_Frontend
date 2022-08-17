@@ -7,15 +7,12 @@ const Home = () => {
     <section className="page-home">
       <div className="cta">
         <img src={CIcon} alt="c-logo-icon" className="c-icon" />
-        <h1>Welcome to CycleList.</h1>
+        <h1>Welcome to CycleList</h1>
         <NavLink className="cta-links" to="/signup">
           Sign Up
         </NavLink>
         <NavLink className="cta-links" to="/login">
           Login
-        </NavLink>
-        <NavLink className="cta-links" to="/riders/:riderId">
-          My Rides
         </NavLink>
       </div>
     </section>
