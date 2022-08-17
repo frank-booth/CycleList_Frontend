@@ -1,8 +1,7 @@
 import { NavLink } from 'react-router-dom'
-
 const Home = () => {
   return (
-    <section className='page-home'>
+    <section className="page-home">
       <div>
         <h1>this is the homepage.</h1>
         <NavLink to="/signup">Sign Up</NavLink>
