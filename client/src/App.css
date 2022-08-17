@@ -6,7 +6,7 @@
 }
   
 
-
+  /* NavBar */
  .nav-logo:hover{
   filter: invert(100%)
  }
@@ -66,11 +66,13 @@
     border-radius: 5px;
     
   }
+
+    /* home page style */
   .page-home{
     background-image: url(./assets/HomeBg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: aboslute;
+    background-position: center;
     height: 100vh;
     width: 100%;
    
@@ -80,9 +82,11 @@
 
   .page-home h1{
     color: #FFFFFF;
-    font-size: 48px;
+    font-size: 60px;
   }
-
+.c-icon{
+  width: 150px;
+}
   .cta{
     display: flex;
     flex-direction: column;
@@ -104,3 +108,4 @@
   .cta-links:hover{
     color: #CB1E11;
   }
+
