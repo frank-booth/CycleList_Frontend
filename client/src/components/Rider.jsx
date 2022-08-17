@@ -1,5 +1,6 @@
 import { useLocation, useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import { BASE_URL } from '../globals'
 
 const Rider = ({ songs }) => {
   let location = useLocation()
@@ -17,6 +18,11 @@ const Rider = ({ songs }) => {
     navigate(`/riders/${rider.id}/editsong`, { state: { song: song } })
   }
 
+  const deleteSong = async (song) => {
+    await axios.delete(`${BASE_URL}/api/songs/${song.id}`)
+    navigate(`/riders/${rider.id}`, { state: { rider: rider } })
+}
+
   return (
     <div>
       <h1>{rider.userName}</h1>
@@ -31,7 +37,7 @@ const Rider = ({ songs }) => {
             <p>{song.genre}</p>
             <p>{song.length}</p>
             <button onClick={() => editSong(song)}>Edit</button>
-            <button>Delete</button>
+            <button onClick={() => deleteSong(song)}>Delete</button>
           </div>
         ))}
       </div>
