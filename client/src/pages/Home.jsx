@@ -1,12 +1,22 @@
 import { NavLink } from 'react-router-dom'
+import HomeBg from '../assets/HomeBg.png'
+import CIcon from '../assets/C.svg'
+
 const Home = () => {
   return (
     <section className="page-home">
-      <div>
-        <h1>this is the homepage.</h1>
-        <NavLink to="/signup">Sign Up</NavLink>
-        <NavLink to="/login">Login</NavLink>
-        <NavLink to="/riders/:riderId">My Rides</NavLink>
+      <div className="cta">
+        <img src={CIcon} alt="c-logo-icon" className="c-icon" />
+        <h1>Welcome to CycleList.</h1>
+        <NavLink className="cta-links" to="/signup">
+          Sign Up
+        </NavLink>
+        <NavLink className="cta-links" to="/login">
+          Login
+        </NavLink>
+        <NavLink className="cta-links" to="/riders/:riderId">
+          My Rides
+        </NavLink>
       </div>
     </section>
   )

@@ -6,7 +6,6 @@ const Nav = () => {
     <div className='navBar'>
       <div className='navContent'>
         <div id="logo">
-
           <Link to="/">
           <img src={NavLogo} alt="cycle-list-logo" className="nav-logo" />
           </Link>
