@@ -10,7 +10,7 @@ const Rider = ({ songs }) => {
 
   let riderSongs = songs?.filter((song) => song.riderId === rider.id)
 
-  const gotToAddSong = () => {
+  const addSong = () => {
     navigate(`/riders/${rider.id}/addsong`, { state: { rider: rider } })
   }
 
@@ -27,7 +27,7 @@ const Rider = ({ songs }) => {
     <div>
       <h1>{rider.userName}</h1>
       <h1>My Rides</h1>
-      <button onClick={gotToAddSong}>Add Song</button>
+      <button onClick={addSong}>Add Song</button>
       <div>
         {riderSongs?.map((song) => (
           <div key={song.id} className="song-card">

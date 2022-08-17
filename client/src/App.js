@@ -61,7 +61,7 @@ function App() {
           <Route path="/riders/:riderId/addsong" element={<AddSong />} />
           <Route path="/riders/:riderId/editsong" element={<EditSong />} />
           <Route path="/songs/:songId/addroutine" element={<AddRoutine />} />
-          <Route path="/songs/genres" element={<SongGenre />} />
+          <Route path="/songs/genres" element={<SongGenre songs={songs} />} />
           <Route path="/songs/routine-types" element={<RoutineType />} />
         </Routes>
       </main>
