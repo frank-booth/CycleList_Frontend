@@ -72,10 +72,15 @@
     background-size: cover;
     background-position: aboslute;
     height: 100vh;
-    width: 90%;
-    border-radius: 20px;
+    width: 100%;
+   
     display: flex;
     flex-direction: column;
+  }
+
+  .page-home h1{
+    color: #FFFFFF;
+    font-size: 48px;
   }
 
   .cta{
@@ -94,4 +99,8 @@
     color: #FFFFFF;
     text-decoration: none;
 
+  }
+
+  .cta-links:hover{
+    color: #CB1E11;
   }
