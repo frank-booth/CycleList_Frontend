@@ -15,11 +15,13 @@ const Login = ({ riders }) => {
   }
 
   const handleSubmit = (event) => {
-    const userData = riders.find((rider) => rider.userName === formState.userName)
+    const userData = riders.find(
+      (rider) => rider.userName === formState.userName
+    )
 
     if (userData) {
       if (userData.userName === formState.userName) {
-        navigate(`/riders/${userData.id}`, {state: { rider: userData }})
+        navigate(`/riders/${userData.id}`, { state: { rider: userData } })
         console.log(userData.firstName)
       } else {
         alert('try again')
