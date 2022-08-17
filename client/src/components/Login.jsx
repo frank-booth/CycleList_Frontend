@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import RiderSongList from './RiderSongList'
 
 const Login = ({ riders }) => {
   let navigate = useNavigate()
@@ -14,7 +13,7 @@ const Login = ({ riders }) => {
     setFormState({ ...formState, [event.target.id]: event.target.value })
   }
 
-  const handleSubmit = (event) => {
+  const handleSubmit = () => {
     const userData = riders.find(
       (rider) => rider.userName === formState.userName
     )
@@ -37,7 +36,14 @@ const Login = ({ riders }) => {
           onChange={handleChange}
           value={formState.userName}
           placeholder="Username"
-        ></input>
+        />
+        <input
+          id="passwordDigest"
+          type="text"
+          onChange={handleChange}
+          value={formState.passwordDigest}
+          placeholder="Password"
+        />
         <button type="submit">Submit</button>
       </form>
     </div>
