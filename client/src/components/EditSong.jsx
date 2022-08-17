@@ -27,7 +27,8 @@ const EditSong = () => {
   }
   console.log(songFormState)
 
-  const handleSubmitSong = async (song) => {
+  const handleSubmitSong = async (event) => {
+    event.preventDefault()
     let res = await axios.put(`${BASE_URL}/api/songs/${song.id}`, songFormState)
     setSongFormState(initialStateSong)
     navigate(-1)
