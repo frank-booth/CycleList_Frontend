@@ -13,6 +13,7 @@ const Songs = ({ songs }) => {
         {songs?.map((song) => (
           <div key={song.id} className="song-card">
             <h3>'{song.title}'</h3>
+            <img src={song.songImage} />
             <p>{song.artist}</p>
             <p>{song.genre}</p>
             <p>{song.length}</p>
