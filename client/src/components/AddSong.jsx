@@ -1,11 +1,14 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 import axios from 'axios'
 import { BASE_URL } from '../globals'
 
 const AddSong = () => {
 
+    let location = useLocation()
     let navigate = useNavigate()
+
+    let rider = location.state.rider
 
     const initialStateSong = {
         title: '',
@@ -23,8 +26,9 @@ const AddSong = () => {
 
     const handleSubmitSong = async (event) => {
         event.preventDefault()
-        let res = await axios.post(`${BASE_URL}/api/songs/1`, songFormState) //********/
+        let res = await axios.post(`${BASE_URL}/api/songs/${rider.id}`, songFormState) //********/
         setSongFormState(initialStateSong)
+        navigate(-1)
     }
 
     
