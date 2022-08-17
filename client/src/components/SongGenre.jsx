@@ -33,6 +33,7 @@ const SongGenre = ({songs}) => {
                     <p>{song.artist}</p>
                     <p>{song.genre}</p>
                     <p>{song.length}</p>
+                    <p>{song.Routine?.category}</p>
                 </div>
                 ))}
             </div>
