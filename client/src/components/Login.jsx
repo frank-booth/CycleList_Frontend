@@ -15,13 +15,17 @@ const Login = ({ riders }) => {
   }
 
   const handleSubmit = (event) => {
-    for (let i = 0; i < riders.length; i++) {
-      if ((event.target.value = riders[i].userName)) {
+    event.preventDefault()
+    for (
+      let i = 1;
+      i <= riders.length || formState.userName === riders[i].userName;
+      i++
+    ) {
+      if (true) {
         navigate(`/riders/${riders[i].id}`, { state: { riders: riders } })
+        console.log(riders.length)
+        console.log(formState.userName)
         setFormState(initialState)
-        return
-      } else {
-        alert('Try again')
       }
     }
   }
