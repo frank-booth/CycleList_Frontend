@@ -16,8 +16,9 @@ const RoutineType = ({songs}) => {
     return(
         <div>
             <h1>Songs by Routine</h1>
-            <div>
-                <button onClick={() => selectRoutine(songs)}>All</button>                <button onClick={() => selectRoutine(climb)}>Climb</button>
+            <div className="filter-nav">
+                <button onClick={() => selectRoutine(songs)}>All</button>                
+                <button onClick={() => selectRoutine(climb)}>Climb</button>
                 <button onClick={() => selectRoutine(flatRoad)}>Flat Road</button>
                 <button onClick={() => selectRoutine(sprints)}>Sprints</button>
                 <button onClick={() => selectRoutine(jumps)}>Jumps</button>

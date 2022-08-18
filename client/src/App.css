@@ -119,13 +119,16 @@
   padding: 45px;
   border-radius: 20px;
   box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2);
-
-
   background: #87FFF3;
 }
 
 .main-container h1 {
+  font-size: 48px;
   color: black;
+}
+
+.main-container .c-icon {
+  width: 100px;
 }
 
 .main-container .form-container{
@@ -135,7 +138,6 @@
   align-items: center;
   padding: 32px 40px;
   gap: 24px;
-  
   min-width: 448px;
   min-height: 150px;
   border-radius: 15px;
@@ -231,7 +233,7 @@
 
 .column-headers {
   display:grid;
-  grid-template-columns: 15% 15% 10% 10% 10% 30% 10%;
+  grid-template-columns: 15% 15% 10% 10% 10% 40%;
   border: 1px solid lightgrey;
   background-color: #f0ecec;
   align-items: center;
@@ -239,6 +241,21 @@
 }
 
 .column-headers h4 {
+  border-right: 1px solid lightgrey;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.rider-column-headers {
+  display:grid;
+  grid-template-columns: 15% 15% 10% 10% 10% 30% 10%;
+  border: 1px solid lightgrey;
+  background-color: #f0ecec;
+  align-items: center;
+  min-height: 35px;
+}
+
+.rider-column-headers h4 {
   border-right: 1px solid lightgrey;
   text-align: left;
   padding-left: 10px;
@@ -290,4 +307,27 @@
   display: grid;
   place-items: center;
   margin-top: 75px;
+}
+
+.filter-nav button {
+  background-color: rgba(255, 255, 255, 0);
+  color: #7e7e7e;
+  border: none;
+  font-weight: 600;
+  font-size: 30px;
+  padding: 10px;
+  margin: 0 15px;
+}
+
+.filter-nav button:hover {
+  color: #FF2615;
+  cursor: pointer;
+  padding-left: none;
+}
+
+.filter-nav button:focus {
+  color: #CB1E11;
+  cursor: pointer;
+  padding-left: none;
+  border-bottom: 2px solid lightgrey;
 }
