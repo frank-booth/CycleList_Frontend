@@ -1,4 +1,5 @@
 import { useLocation, useNavigate } from 'react-router-dom'
+
 import axios from 'axios'
 import { BASE_URL } from '../globals'
 
@@ -21,10 +22,12 @@ const Rider = ({ songs }) => {
   const deleteSong = async (song) => {
     await axios.delete(`${BASE_URL}/api/songs/${song.id}`)
     navigate(`/riders/${rider.id}`, { state: { rider: rider } })
+    window.location.reload(false)
   }
 
   return (
     <div>
+
       <section className='hero-section'>
         <h1>Welcome</h1>
         <h2>{rider.userName}</h2>
@@ -34,6 +37,12 @@ const Rider = ({ songs }) => {
       <h3>My Songs & Routine</h3>
     </div>
       <div className='list-container'>
+
+      <h1>{rider.userName}</h1>
+      <h1>My Rides</h1>
+      <button onClick={addSong}>Add Song</button>
+      <div className="list-container">
+
         <div className="column-headers">
           <h4>Song Image</h4>
           <h4>Title/Artist</h4>
@@ -52,6 +61,7 @@ const Rider = ({ songs }) => {
                 <p>{song.artist}</p>
               </div>
               <p>{song.genre}</p>
+
               <p>{song.length}</p>
               <p>{song.Routine?.category}</p>
               <p>{song.Routine?.content}</p>

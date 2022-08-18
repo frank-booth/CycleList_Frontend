@@ -25,10 +25,11 @@ const SignUp = () => {
     event.preventDefault()
     let res = await axios.post(`${BASE_URL}/api/riders`, formState)
     setFormState(initialState)
+    navigate(`/riders/${res.data.id}`, { state: { rider: res.data } })
   }
 
   return (
-    <div className='main-container'>
+    <div className="main-container">
       <img src={CIcon} alt="c-logo-icon" className="c-icon" />
       <h1>Sign Up</h1>
       <div className="form-container">

@@ -4,7 +4,7 @@ import axios from 'axios'
 import { BASE_URL } from '../globals'
 import CIcon from '../assets/C.svg'
 
-const AddRoutine = () => {
+const AddRoutine = ({ getAllSongs }) => {
   let navigate = useNavigate()
   let location = useLocation()
   let songId = location.state.songId
@@ -29,11 +29,12 @@ const AddRoutine = () => {
       routineFormState
     ) //********/
     setRoutineFormState(initialStateRoutine)
+    getAllSongs()
     navigate(-2)
   }
 
   return (
-    <div className='main-container'>
+    <div className="main-container">
       <img src={CIcon} alt="c-logo-icon" className="c-icon" />
       <h1>Add Routine Here</h1>
       <div className="form-container">

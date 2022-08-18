@@ -42,7 +42,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <Nav riders={riders}/>
+        <Nav riders={riders} />
       </header>
 
       <main>
@@ -54,9 +54,15 @@ function App() {
           <Route path="/login" element={<Login riders={riders} />} />
           <Route path="/riders/:riderId/addsong" element={<AddSong />} />
           <Route path="/riders/:riderId/editsong" element={<EditSong />} />
-          <Route path="/songs/:songId/addroutine" element={<AddRoutine />} />
+          <Route
+            path="/songs/:songId/addroutine"
+            element={<AddRoutine getAllSongs={getAllSongs} />}
+          />
           <Route path="/songs/genre" element={<SongGenre songs={songs} />} />
-          <Route path="/songs/routine" element={<RoutineType songs={songs} />} />
+          <Route
+            path="/songs/routine"
+            element={<RoutineType songs={songs} />}
+          />
         </Routes>
       </main>
     </div>
