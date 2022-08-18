@@ -33,7 +33,7 @@ const AddRoutine = () => {
   }
 
   return (
-    <div className='main-container'>
+    <div className="main-container">
       <img src={CIcon} alt="c-logo-icon" className="c-icon" />
       <h1>Add Routine Here</h1>
       <div className="form-container">

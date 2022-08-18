@@ -36,7 +36,7 @@ const EditSong = () => {
   }
 
   return (
-    <div className='main-container'>
+    <div className="main-container">
       <img src={CIcon} alt="c-logo-icon" className="c-icon" />
       <h1>Add songs here</h1>
       <div className="form-container">
