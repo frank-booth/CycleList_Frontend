@@ -1,16 +1,18 @@
 import NavLogo from '../assets/NavLogo.svg'
 import { NavLink, Link } from 'react-router-dom'
+import "../App.css"
 
 const Nav = () => {
   return (
-    <div className='navBar'>
-      <div className='navContent'>
+    <div className='NavBar'>
+      <div className='NavLogo'>
         <div id="logo">
           <Link to="/">
           <img src={NavLogo} alt="cycle-list-logo" className="nav-logo" />
           </Link>
         </div>
-        <div className="nav-links">
+      </div>
+        <div className="NavLinks">
           <div className="links">
             <NavLink id="links" to="/">Home</NavLink>
             <NavLink  id="links" to="/songs">Songs</NavLink>
@@ -18,7 +20,6 @@ const Nav = () => {
           </div>
 
         </div>
-      </div>
     </div>
   )
 }

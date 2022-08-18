@@ -7,11 +7,10 @@
   
 
   /* NavBar */
- .nav-logo:hover{
+ /* .nav-logo:hover{
   filter: invert(100%)
  }
-
-  .navBar {
+ .navBar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +18,7 @@
     background: #FF2615;
     
   }
-  .navContent {
+.navContent {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -29,8 +28,7 @@
     width: auto;
     height: 64px;
   }
-
-  .nav-links {
+.nav-links {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -41,8 +39,6 @@
     width: 927px;
     height: 36px;
   }
-  
-
 .links{
     display: flex;
     flex-direction: row;
@@ -51,7 +47,7 @@
     gap: 30px;
     width: 321px;
 }
-  #links{
+#links{
 
     color: #FFFFFF;
     text-decoration: none;
@@ -60,12 +56,58 @@
     padding:10px 10px;
 
   }
-  #links:hover{
+#links:hover{
     background-color: #CB1E11;
     padding:10px 10px;
     border-radius: 5px;
     
+  } */
+
+  .NavBar{
+    background: #FF2615;
+    display: flex;
+    height: 80px;
   }
+
+  .NavBar .NavLogo{
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 45px;
+  }
+
+  .NavBar .NavLinks{
+    flex: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 45px;
+  }
+
+  .NavBar .NavLinks .links{
+    max-height: 80px;
+  }
+
+  .NavBar .NavLinks .links a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 15px;
+    padding: 10px 10px;
+  }
+
+  #links:hover{
+    background-color: #CB1E11;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+  .nav-logo:hover{
+    filter: invert(100%)
+  }
+
 
     /* home page style */
   .page-home{
@@ -80,7 +122,7 @@
     flex-direction: column;
   }
 
-  .page-home h1{
+ h1{
     color: #FFFFFF;
     font-size: 60px;
   }
