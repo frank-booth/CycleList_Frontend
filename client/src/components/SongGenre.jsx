@@ -17,7 +17,7 @@ const SongGenre = ({songs}) => {
             <section className='hero-section'>
                 <h1>Songs by Genre</h1>
             </section>
-            <div className="genre-nav">
+            <div className="filter-nav">
                 <button onClick={() => selectGenre(songs)}>All</button>
                 <button onClick={() => selectGenre(popSongs)}>Pop</button>
                 <button onClick={() => selectGenre(rockSongs)}>Rock</button>

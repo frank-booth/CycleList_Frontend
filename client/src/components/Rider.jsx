@@ -36,10 +36,8 @@ const Rider = ({ songs }) => {
       <div className='page-title'>
         <h3>My Songs & Routine</h3>
       </div>
-      
       <div className="list-container">
-
-        <div className="column-headers">
+        <div className="rider-column-headers">
           <h4>Song Image</h4>
           <h4>Title/Artist</h4>
           <h4>Genre</h4>
