@@ -27,10 +27,22 @@ const Rider = ({ songs }) => {
 
   return (
     <div>
+
+      <section className='hero-section'>
+        <h1>Welcome</h1>
+        <h2>{rider.userName}</h2>
+        <button onClick={addSong}>Add Song</button>
+    </section>
+    <div className='page-title'>
+      <h3>My Songs & Routine</h3>
+    </div>
+      <div className='list-container'>
+
       <h1>{rider.userName}</h1>
       <h1>My Rides</h1>
       <button onClick={addSong}>Add Song</button>
       <div className="list-container">
+
         <div className="column-headers">
           <h4>Song Image</h4>
           <h4>Title/Artist</h4>

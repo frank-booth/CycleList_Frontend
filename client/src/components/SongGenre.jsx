@@ -14,7 +14,9 @@ const SongGenre = ({songs}) => {
 
     return(
         <div>
-            <h1>Songs by Genre</h1>
+            <section className='hero-section'>
+                <h1>Songs by Genre</h1>
+            </section>
             <div className="genre-nav">
                 <button onClick={() => selectGenre(songs)}>All</button>
                 <button onClick={() => selectGenre(popSongs)}>Pop</button>
@@ -24,22 +26,36 @@ const SongGenre = ({songs}) => {
                 <button onClick={() => selectGenre(edmSongs)}>EDM</button>
                 <button onClick={() => selectGenre(otherSongs)}>Other</button>
             </div>
-
+            <div className="list-container">
+            <div className="column-headers">
+                <h4>Song Image</h4>
+                <h4>Title/Artist</h4>
+                <h4>Genre</h4>
+                <h4>Length</h4>
+                <h4>Category</h4>
+                <h4>Routine</h4>
+            </div>
             <div className="songs-container">
                 {genreSelected?.map((song) => (
                 <div key={song.id} className="song-card">
-                    <h3>'{song.title}'</h3>
-                    <img src={song.songImage} />
-                    <p>{song.artist}</p>
+                    <img className="song-image" src={song.songImage} />
+                    <div className="artist-info">
+                        <h3>'{song.title}'</h3>
+                        <p>{song.artist}</p>
+                    </div>
                     <p>{song.genre}</p>
                     <p>{song.length}</p>
                     <p>{song.Routine?.category}</p>
                     <p>{song.Routine?.content}</p>
                 </div>
+                
                 ))}
+            </div>
             </div>
         </div>
     )
 }
 
 export default SongGenre
+                
+            

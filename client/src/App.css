@@ -3,8 +3,6 @@
   font-family: "Montserrat", sans-serif;
   padding: 0;
   margin: 0;
-
-
 }
   
 
@@ -72,8 +70,9 @@
 
  h1{
     color: #FFFFFF;
-    font-size: 60px;
+    font-size: 75px;
   }
+
 .c-icon{
   width: 150px;
 }
@@ -182,7 +181,8 @@
 /*Rider Card*/
 
 .list-container{
-  padding: 45px
+  padding: 45px;
+  margin: 75px;
 }
 .song-card {
   display:grid;
@@ -234,4 +234,33 @@
   border-right: 1px solid lightgrey;
   text-align: left;
   padding-left: 10px;
+}
+
+.hero-section {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./assets/HomeBg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  margin: 50px 120px;
+  min-width: 200px;
+  padding: 45px;
+  border-radius: 20px;
+  box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2);
+}
+
+.hero-section h2{
+  color: #FF2615;
+  font-size: 50px;
+}
+
+.page-title {
+  color: #7e7e7e;
+  font-size: 30px;
+  display: grid;
+  place-items: center;
+  margin-top: 75px;
 }
