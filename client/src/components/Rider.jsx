@@ -33,7 +33,7 @@ const Rider = ({ songs }) => {
         <h4>Title/Artist</h4>
         <h4>Genre</h4>
         <h4>Length</h4>
-        <h4>Routine Category</h4>
+        <h4>Category</h4>
         <h4>Routine</h4>
         <h4>Edit/Delete</h4>
       </div>

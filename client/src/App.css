@@ -184,21 +184,52 @@
 .song-card {
   display:grid;
   grid-template-columns: 15% 15% 10% 10% 10% 30% 10%;
-  align-items:center
+  align-items:center;
+  border-bottom: 1px solid lightgrey;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
 }
 
-.song-info{
-  display: flex;
-  flex-direction: row;
+.song-card p, h3 {
+  text-align: left;
 }
 
-.column-headers {
-  display:grid;
-  grid-template-columns: 15% 15% 10% 10% 10% 30% 10%;
+.song-card-buttons {
+  align-items: left;
+}
 
+.song-card-buttons button {
+  background-color: #FFFFFF;
+  color: #FF2615;
+  border: none;
+  margin-left: 5px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.song-card-buttons button:hover {
+  color: #CB1E11;
+  cursor: pointer;
+  padding-left: none;
 }
 
 .song-image{
   max-width: 100px;
   margin: 0 auto
+}
+
+.column-headers {
+  display:grid;
+  grid-template-columns: 15% 15% 10% 10% 10% 30% 10%;
+  border: 1px solid lightgrey;
+  background-color: #f0ecec;
+  align-items: center;
+  min-height: 35px;
+}
+
+.column-headers h4 {
+  border-right: 1px solid lightgrey;
+  text-align: left;
+  padding-left: 10px;
 }
