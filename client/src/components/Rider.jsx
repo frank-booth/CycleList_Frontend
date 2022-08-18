@@ -28,6 +28,7 @@ const Rider = ({ songs }) => {
       <h1>{rider.userName}</h1>
       <h1>My Rides</h1>
       <button onClick={addSong}>Add Song</button>
+      <div className='list-container'>
       <div className="column-headers">
         <h4>Song Image</h4>
         <h4>Title/Artist</h4>
@@ -56,6 +57,7 @@ const Rider = ({ songs }) => {
             </div>
           </div>
         ))}
+      </div>
       </div>
     </div>
   )

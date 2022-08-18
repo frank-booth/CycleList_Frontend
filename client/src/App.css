@@ -181,6 +181,9 @@
 
 /*Rider Card*/
 
+.list-container{
+  padding: 45px
+}
 .song-card {
   display:grid;
   grid-template-columns: 15% 15% 10% 10% 10% 30% 10%;
@@ -203,7 +206,6 @@
   background-color: #FFFFFF;
   color: #FF2615;
   border: none;
-  margin-left: 5px;
   font-weight: 600;
   font-size: 16px;
 }
@@ -216,7 +218,7 @@
 
 .song-image{
   max-width: 100px;
-  margin: 0 auto
+  
 }
 
 .column-headers {
