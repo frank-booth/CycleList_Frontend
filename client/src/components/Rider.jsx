@@ -74,6 +74,7 @@ const Rider = ({ songs }) => {
         </div>
       </div>
     </div>
+    </div>
   )
 }
 export default Rider
