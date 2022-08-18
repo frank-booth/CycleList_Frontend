@@ -32,9 +32,11 @@ const Rider = ({ songs }) => {
         <h2>{rider.userName}</h2>
         <button onClick={addSong}>Add Song</button>
       </section>
+
       <div className="page-title">
         <h3>My Songs & Routine</h3>
       </div>
+
       <div className="list-container">
         <div className="column-headers">
           <h4>Song Image</h4>
