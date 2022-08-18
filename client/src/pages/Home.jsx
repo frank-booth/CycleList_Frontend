@@ -1,5 +1,4 @@
 import { NavLink } from 'react-router-dom'
-import HomeBg from '../assets/HomeBg.png'
 import CIcon from '../assets/C.svg'
 
 const Home = () => {

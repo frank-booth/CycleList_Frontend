@@ -21,34 +21,33 @@ const Login = ({ riders }) => {
 
     if (userData) {
       navigate(`/riders/${userData.id}`, { state: { rider: userData } })
-      console.log(userData.firstName)
     } else {
       alert('try again')
     }
   }
 
   return (
-    <div className='main-container'>
+    <div className="main-container">
       <img src={CIcon} alt="c-logo-icon" className="c-icon" />
       <h1>Login</h1>
       <div className="form-container">
-      <form onSubmit={handleSubmit}>
-        <input
-          id="userName"
-          type="text"
-          onChange={handleChange}
-          value={formState.userName}
-          placeholder="Username"
-        />
-        <input
-          id="passwordDigest"
-          type="text"
-          onChange={handleChange}
-          value={formState.passwordDigest}
-          placeholder="Password"
-        />
-        <button type="submit">Submit</button>
-      </form>
+        <form onSubmit={handleSubmit}>
+          <input
+            id="userName"
+            type="text"
+            onChange={handleChange}
+            value={formState.userName}
+            placeholder="Username"
+          />
+          <input
+            id="passwordDigest"
+            type="text"
+            onChange={handleChange}
+            value={formState.passwordDigest}
+            placeholder="Password"
+          />
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </div>
   )

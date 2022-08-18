@@ -27,7 +27,7 @@ const AddRoutine = ({ getAllSongs }) => {
     let res = await axios.post(
       `${BASE_URL}/api/routines/${songId}`,
       routineFormState
-    ) //********/
+    )
     setRoutineFormState(initialStateRoutine)
     getAllSongs()
     navigate(-2)

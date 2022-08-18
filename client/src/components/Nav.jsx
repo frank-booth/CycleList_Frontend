@@ -2,7 +2,7 @@ import NavLogo from '../assets/NavLogo.svg'
 import { NavLink, Link } from 'react-router-dom'
 import '../App.css'
 
-const Nav = ({ riders }) => {
+const Nav = () => {
   return (
     <div className="NavBar">
       <div className="NavLogo">
