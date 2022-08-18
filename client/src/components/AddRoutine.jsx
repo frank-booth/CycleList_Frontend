@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import axios from 'axios'
 import { BASE_URL } from '../globals'
+import CIcon from '../assets/C.svg'
 
 const AddRoutine = () => {
   let navigate = useNavigate()
@@ -32,7 +33,8 @@ const AddRoutine = () => {
   }
 
   return (
-    <div>
+    <div className='main-container'>
+      <img src={CIcon} alt="c-logo-icon" className="c-icon" />
       <h1>Add Routine Here</h1>
       <div className="form-container">
         <form onSubmit={handleSubmitRoutine}>

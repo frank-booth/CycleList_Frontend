@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import axios from 'axios'
 import { BASE_URL } from '../globals'
+import CIcon from '../assets/C.svg'
 
 const AddSong = () => {
   let location = useLocation()
@@ -40,7 +41,8 @@ const AddSong = () => {
   }
 
   return (
-    <div>
+    <div className='main-container'>
+      <img src={CIcon} alt="c-logo-icon" className="c-icon" />
       <h1>Add songs here</h1>
       <div className="form-container">
         <form onSubmit={handleSubmitSong}>
