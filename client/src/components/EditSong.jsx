@@ -40,7 +40,7 @@ const EditSong = () => {
   return (
     <div className="main-container">
       <img src={CIcon} alt="c-logo-icon" className="c-icon" />
-      <h1>Add songs here</h1>
+      <h1>Edit Song</h1>
       <div className="form-container">
         <form onSubmit={handleSubmitSong}>
           <input
@@ -48,14 +48,14 @@ const EditSong = () => {
             type="text"
             onChange={handleChangeSong}
             value={songFormState.title}
-            placeholder="title"
+            placeholder="Title"
           />
           <input
             id="artist"
             type="text"
             onChange={handleChangeSong}
             value={songFormState.artist}
-            placeholder="artist"
+            placeholder="Artist"
           />
           <select
             id="genre"
@@ -75,14 +75,14 @@ const EditSong = () => {
             type="text"
             onChange={handleChangeSong}
             value={songFormState.length}
-            placeholder="length"
+            placeholder="Song Length"
           />
           <input
             id="songImage"
             type="text"
             onChange={handleChangeSong}
             value={songFormState.songImage}
-            placeholder="song image"
+            placeholder="Album Art (URL)"
           />
           <button type="submit">Submit</button>
         </form>
