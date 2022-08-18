@@ -2,7 +2,7 @@ import './App.css'
 import axios from 'axios'
 import { BASE_URL } from './globals'
 import { useState, useEffect } from 'react'
-import { Route, Routes, useNavigate } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import Nav from './components/Nav'
 import Home from './pages/Home'
 import Rider from './components/Rider'
@@ -17,8 +17,6 @@ import SongGenre from './components/SongGenre'
 import RoutineType from './components/RoutineType'
 
 function App() {
-  let navigate = useNavigate()
-
   const [riders, setRiders] = useState()
   const [songs, setSongs] = useState()
 
@@ -43,7 +41,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <Nav riders={riders} />
+        <Nav />
       </header>
 
       <main>

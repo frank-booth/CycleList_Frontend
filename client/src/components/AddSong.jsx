@@ -32,16 +32,15 @@ const AddSong = () => {
     let res = await axios.post(
       `${BASE_URL}/api/songs/${rider.id}`,
       songFormState
-    ) //********/
+    )
     setSongFormState(initialStateSong)
-    console.log(res.data.id)
     navigate(`/songs/${res.data.id}/addroutine`, {
       state: { songId: res.data.id }
     })
   }
 
   return (
-    <div className='main-container'>
+    <div className="main-container">
       <img src={CIcon} alt="c-logo-icon" className="c-icon" />
       <h1>Add New Song</h1>
       <div className="form-container">

@@ -12,7 +12,7 @@ const EditRoutine = ({ getAllSongs }) => {
     content: `${song.Routine?.content}`,
     category: `${song.Routine?.category}`
   }
-  console.log(song)
+
   const [routineFormState, setRoutineFormState] = useState(initialStateRoutine)
 
   const handleChangeRoutine = (event) => {
@@ -24,10 +24,10 @@ const EditRoutine = ({ getAllSongs }) => {
 
   const handleSubmitRoutine = async (event) => {
     event.preventDefault()
-    let res = await axios.put(
+    await axios.put(
       `${BASE_URL}/api/routines/${song.Routine?.id}`,
       routineFormState
-    ) //********/
+    )
     setRoutineFormState(initialStateRoutine)
     getAllSongs()
     navigate(-2)
