@@ -36,6 +36,8 @@ const Rider = ({ songs }) => {
             <p>{song.artist}</p>
             <p>{song.genre}</p>
             <p>{song.length}</p>
+            <p>{song.Routine?.category}</p>
+            <p>{song.Routine?.content}</p>
             <button onClick={() => editSong(song)}>Edit</button>
             <button onClick={() => deleteSong(song)}>Delete</button>
           </div>

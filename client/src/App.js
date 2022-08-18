@@ -6,8 +6,6 @@ import { Route, Routes, useNavigate } from 'react-router-dom'
 import Nav from './components/Nav'
 import Home from './pages/Home'
 import Rider from './components/Rider'
-import Songs from './pages/Songs'
-import SongRoutine from './pages/SongRoutine'
 import About from './pages/About'
 import SignUp from './components/SignUp'
 import Login from './components/Login'
@@ -51,16 +49,14 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/riders/:riderId" element={<Rider songs={songs} />} />
-          <Route path="/songs" element={<Songs songs={songs} />} />
-          <Route path="/songs/:songId" element={<SongRoutine />} />
           <Route path="/about" element={<About />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login riders={riders} />} />
           <Route path="/riders/:riderId/addsong" element={<AddSong />} />
           <Route path="/riders/:riderId/editsong" element={<EditSong />} />
           <Route path="/songs/:songId/addroutine" element={<AddRoutine />} />
-          <Route path="/songs/genres" element={<SongGenre songs={songs} />} />
-          <Route path="/songs/routine-types" element={<RoutineType songs={songs} />} />
+          <Route path="/songs/genre" element={<SongGenre songs={songs} />} />
+          <Route path="/songs/routine" element={<RoutineType songs={songs} />} />
         </Routes>
       </main>
     </div>
