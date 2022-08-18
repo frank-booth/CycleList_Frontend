@@ -12,6 +12,7 @@ import Login from './components/Login'
 import AddSong from './components/AddSong'
 import AddRoutine from './components/AddRoutine'
 import EditSong from './components/EditSong'
+import EditRoutine from './components/EditRoutine'
 import SongGenre from './components/SongGenre'
 import RoutineType from './components/RoutineType'
 
@@ -57,6 +58,10 @@ function App() {
           <Route
             path="/songs/:songId/addroutine"
             element={<AddRoutine getAllSongs={getAllSongs} />}
+          />
+          <Route
+            path="/songs/:songId/editroutine"
+            element={<EditRoutine getAllSongs={getAllSongs} />}
           />
           <Route path="/songs/genre" element={<SongGenre songs={songs} />} />
           <Route

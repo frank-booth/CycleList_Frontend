@@ -32,7 +32,9 @@ const EditSong = () => {
     event.preventDefault()
     let res = await axios.put(`${BASE_URL}/api/songs/${song.id}`, songFormState)
     setSongFormState(initialStateSong)
-    navigate(-1)
+    navigate(`/songs/${song.id}/editroutine`, {
+      state: { song: song }
+    })
   }
 
   return (
