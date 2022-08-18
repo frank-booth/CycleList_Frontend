@@ -13,10 +13,9 @@ const RoutineType = ({songs}) => {
     let coolDown = songs?.filter((song) => song.Routine?.category === 'Cool-Down')
     let otherCategory = songs?.filter((song) => song.Routine?.category === 'Other')
 
-
     return(
         <div>
-            <h1>Songs sorted by Routine Type</h1>
+            <h1>Songs by Routine</h1>
             <div>
                 <button onClick={() => selectRoutine(songs)}>All</button>                <button onClick={() => selectRoutine(climb)}>Climb</button>
                 <button onClick={() => selectRoutine(flatRoad)}>Flat Road</button>
@@ -35,10 +34,10 @@ const RoutineType = ({songs}) => {
                     <p>{song.genre}</p>
                     <p>{song.length}</p>
                     <p>{song.Routine?.category}</p>
+                    <p>{song.Routine?.content}</p>
                 </div>
                 ))}
             </div>
-            <NavLink to="/songs">Back to Songs</NavLink>
         </div>
     )
 }

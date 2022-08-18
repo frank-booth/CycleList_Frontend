@@ -14,7 +14,7 @@ const SongGenre = ({songs}) => {
 
     return(
         <div>
-            <h1>Songs sorted by Genre</h1>
+            <h1>Songs by Genre</h1>
             <div className="genre-nav">
                 <button onClick={() => selectGenre(songs)}>All</button>
                 <button onClick={() => selectGenre(popSongs)}>Pop</button>
@@ -34,10 +34,10 @@ const SongGenre = ({songs}) => {
                     <p>{song.genre}</p>
                     <p>{song.length}</p>
                     <p>{song.Routine?.category}</p>
+                    <p>{song.Routine?.content}</p>
                 </div>
                 ))}
             </div>
-            <NavLink to="/songs">Back to Songs</NavLink>
         </div>
     )
 }

@@ -15,7 +15,8 @@ const Nav = () => {
         <div className="NavLinks">
           <div className="links">
             <NavLink id="links" to="/">Home</NavLink>
-            <NavLink  id="links" to="/songs">Songs</NavLink>
+            <NavLink  id="links" to="/songs/genre">Genre</NavLink>
+            <NavLink  id="links" to="/songs/routine">Routine</NavLink>
             <NavLink id="links"to="/about">About</NavLink>
           </div>
 
