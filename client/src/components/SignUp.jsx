@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { BASE_URL } from '../globals.js'
+import CIcon from '../assets/C.svg'
 
 const SignUp = () => {
   let navigate = useNavigate()
@@ -27,7 +28,8 @@ const SignUp = () => {
   }
 
   return (
-    <div>
+    <div className='main-container'>
+      <img src={CIcon} alt="c-logo-icon" className="c-icon" />
       <h1>Sign Up</h1>
       <div className="form-container">
         <form onSubmit={handleSubmit}>
