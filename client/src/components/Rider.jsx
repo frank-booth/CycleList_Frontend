@@ -22,6 +22,7 @@ const Rider = ({ songs }) => {
   const deleteSong = async (song) => {
     await axios.delete(`${BASE_URL}/api/songs/${song.id}`)
     navigate(`/riders/${rider.id}`, { state: { rider: rider } })
+    window.location.reload(false)
   }
 
   return (

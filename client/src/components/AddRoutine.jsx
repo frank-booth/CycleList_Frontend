@@ -4,7 +4,7 @@ import axios from 'axios'
 import { BASE_URL } from '../globals'
 import CIcon from '../assets/C.svg'
 
-const AddRoutine = () => {
+const AddRoutine = ({ getAllSongs }) => {
   let navigate = useNavigate()
   let location = useLocation()
   let songId = location.state.songId
@@ -29,6 +29,7 @@ const AddRoutine = () => {
       routineFormState
     ) //********/
     setRoutineFormState(initialStateRoutine)
+    getAllSongs()
     navigate(-2)
   }
 
