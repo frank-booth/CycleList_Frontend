@@ -42,7 +42,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <Nav />
+        <Nav riders={riders}/>
       </header>
 
       <main>
