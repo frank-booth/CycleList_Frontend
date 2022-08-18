@@ -25,7 +25,6 @@ function App() {
 
   const getAllRiders = async () => {
     let res = await axios.get(`${BASE_URL}/api/riders`)
-    console.log(res.data)
     setRiders(res.data)
   }
 
@@ -35,7 +34,6 @@ function App() {
 
   const getAllSongs = async () => {
     let res = await axios.get(`${BASE_URL}/api/songs`)
-    console.log(res.data)
     setSongs(res.data)
   }
 
@@ -61,8 +59,8 @@ function App() {
           <Route path="/riders/:riderId/addsong" element={<AddSong />} />
           <Route path="/riders/:riderId/editsong" element={<EditSong />} />
           <Route path="/songs/:songId/addroutine" element={<AddRoutine />} />
-          <Route path="/songs/genres" element={<SongGenre />} />
-          <Route path="/songs/routine-types" element={<RoutineType />} />
+          <Route path="/songs/genres" element={<SongGenre songs={songs} />} />
+          <Route path="/songs/routine-types" element={<RoutineType songs={songs} />} />
         </Routes>
       </main>
     </div>
