@@ -68,6 +68,10 @@
 
   }
 
+  .page-home a {
+    font-size: 24px;
+  }
+
  h1{
     color: #FFFFFF;
     font-size: 75px;
@@ -254,11 +258,30 @@
   padding: 45px;
   border-radius: 20px;
   box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2);
+  justify-content: center;
 }
 
 .hero-section h2{
   color: #FF2615;
   font-size: 50px;
+}
+
+.hero-section button {
+  background: rgba(255, 255, 255, .50);
+  color: #FF2615;
+  padding: 10px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  font-size:  17px;
+  font-weight: 600;
+  margin-top: 25px;
+}
+
+.hero-section button:hover {
+  background: rgba(255, 255, 255, .70);
+  color: #CB1E11;
+  cursor: pointer;
 }
 
 .page-title {
