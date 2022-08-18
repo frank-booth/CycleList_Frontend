@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import CIcon from '../assets/C.svg'
 
 const Login = ({ riders }) => {
   let navigate = useNavigate()
@@ -27,8 +28,10 @@ const Login = ({ riders }) => {
   }
 
   return (
-    <div>
+    <div className='main-container'>
+      <img src={CIcon} alt="c-logo-icon" className="c-icon" />
       <h1>Login</h1>
+      <div className="form-container">
       <form onSubmit={handleSubmit}>
         <input
           id="userName"
@@ -46,6 +49,7 @@ const Login = ({ riders }) => {
         />
         <button type="submit">Submit</button>
       </form>
+      </div>
     </div>
   )
 }
