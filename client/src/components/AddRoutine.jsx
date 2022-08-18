@@ -36,7 +36,7 @@ const AddRoutine = ({ getAllSongs }) => {
   return (
     <div className="main-container">
       <img src={CIcon} alt="c-logo-icon" className="c-icon" />
-      <h1>Add Routine Here</h1>
+      <h1>Add Routine</h1>
       <div className="form-container">
         <form onSubmit={handleSubmitRoutine}>
           <input
@@ -44,7 +44,7 @@ const AddRoutine = ({ getAllSongs }) => {
             type="text"
             onChange={handleChangeRoutine}
             value={routineFormState.content}
-            placeholder="content"
+            placeholder="Content"
           />
           <select
             id="category"
