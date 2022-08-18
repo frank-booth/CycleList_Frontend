@@ -149,6 +149,18 @@
   border-radius: 5px;
   text-align: left;
 }
+.main-container .form-container select {
+  width: 421px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  font-size:  18px;
+  border-radius: 5px;
+  text-align: left;
+}
 
 .main-container .form-container button {
 
@@ -167,3 +179,26 @@
   cursor: pointer;
 }
 
+/*Rider Card*/
+
+.song-card {
+  display:grid;
+  grid-template-columns: 15% 15% 10% 10% 10% 30% 10%;
+  align-items:center
+}
+
+.song-info{
+  display: flex;
+  flex-direction: row;
+}
+
+.column-headers {
+  display:grid;
+  grid-template-columns: 15% 15% 10% 10% 10% 30% 10%;
+
+}
+
+.song-image{
+  max-width: 100px;
+  margin: 0 auto
+}
