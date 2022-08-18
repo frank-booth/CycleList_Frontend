@@ -3,6 +3,8 @@
   font-family: "Montserrat", sans-serif;
   padding: 0;
   margin: 0;
+
+
 }
   
 
@@ -65,6 +67,7 @@
    
     display: flex;
     flex-direction: column;
+
   }
 
  h1{
@@ -176,3 +179,26 @@
   cursor: pointer;
 }
 
+/*Rider Card*/
+
+.song-card {
+  display:grid;
+  grid-template-columns: 15% 15% 10% 10% 10% 30% 10%;
+  align-items:center
+}
+
+.song-info{
+  display: flex;
+  flex-direction: row;
+}
+
+.column-headers {
+  display:grid;
+  grid-template-columns: 15% 15% 10% 10% 10% 30% 10%;
+
+}
+
+.song-image{
+  max-width: 100px;
+  margin: 0 auto
+}
