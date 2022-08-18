@@ -36,11 +36,7 @@ const Rider = ({ songs }) => {
     <div className='page-title'>
       <h3>My Songs & Routine</h3>
     </div>
-      <div className='list-container'>
-
-      <h1>{rider.userName}</h1>
-      <h1>My Rides</h1>
-      <button onClick={addSong}>Add Song</button>
+      
       <div className="list-container">
 
         <div className="column-headers">
@@ -74,7 +70,7 @@ const Rider = ({ songs }) => {
         </div>
       </div>
     </div>
-    </div>
+  
   )
 }
 export default Rider
