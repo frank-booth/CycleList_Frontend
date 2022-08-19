@@ -37,7 +37,7 @@
 
 ### _Component Heirarchy Diagram (CHD)_
 
-![Image](Assets/CycleList_CHD_v.5.png)
+![Image](Assets/CycleList_CHD_v.6.png)
 
 ---
 
