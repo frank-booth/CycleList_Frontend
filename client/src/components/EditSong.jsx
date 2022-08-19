@@ -26,11 +26,10 @@ const EditSong = () => {
       [event.target.id]: event.target.value
     })
   }
-  console.log(songFormState)
 
   const handleSubmitSong = async (event) => {
     event.preventDefault()
-    let res = await axios.put(`${BASE_URL}/api/songs/${song.id}`, songFormState)
+    await axios.put(`${BASE_URL}/api/songs/${song.id}`, songFormState)
     setSongFormState(initialStateSong)
     navigate(`/songs/${song.id}/editroutine`, {
       state: { song: song }

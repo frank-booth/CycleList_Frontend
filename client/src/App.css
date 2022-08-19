@@ -213,11 +213,14 @@
 }
 
 .song-card-buttons button {
+  display:grid;
   background-color: #FFFFFF;
   color: #FF2615;
   border: none;
   font-weight: 600;
   font-size: 16px;
+  margin-bottom:10px;
+ padding-left: 10px
 }
 
 .song-card-buttons button:hover {
@@ -340,7 +343,7 @@
   font-size: 30px;
   display: grid;
   place-items: center;
-  margin-top: 75px;
+  
 }
 
 .filter-nav button {
@@ -365,3 +368,43 @@
   padding-left: none;
   border-bottom: 2px solid lightgrey;
 }
+
+
+/*about page*/
+
+.about-page h1{
+  color: black;
+  font-size: 50px;
+  text-align: center;
+  margin: 75px 0;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 350px;
+}
+
+.flex-row .about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+} 
+
+.profile-image{
+  width: 300px;
+  border-radius: 75px;
+  box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2);;
+}
+
+.linkedIn{
+  color: #FF2615;
+  text-decoration: none;
+}
+.linkedIn:hover{
+  color: #CB1E11;
+  cursor: pointer;
+}
+
