@@ -5,8 +5,8 @@ import CIcon from '../assets/C.svg'
 const Login = ({ riders }) => {
   let navigate = useNavigate()
   const initialState = {
-    userName: '',
-    passwordDigest: ''
+    userName: 'dummy',
+    passwordDigest: 'pw123'
   }
   const [formState, setFormState] = useState(initialState)
 
